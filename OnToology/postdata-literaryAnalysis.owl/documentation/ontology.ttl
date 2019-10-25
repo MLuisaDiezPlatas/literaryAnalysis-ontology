@@ -79,7 +79,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                 rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                             owl:hasValue <http://postdata.linhd.uned.es/kos/figureCategory>
+                             owl:hasValue <http://postdata.linhd.uned.es/kos/trope-category>
                            ] ;
                 rdfs:comment "Categorisation of the item at hand."@en ;
                 rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements/"@en ;
@@ -223,11 +223,39 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                      rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                  owl:hasValue <http://postdata.linhd.uned.es/kos/rethoricalOperation>
+                                  owl:hasValue <http://postdata.linhd.uned.es/kos/rethorica-operation>
                                 ] ;
                      rdfs:comment "Classification categories of speech figures in relation to rhetorical operations: addition, omission, transposition and transmutation"@en ;
                      rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements/"@en ;
                      rdfs:label "rethoricalOperation"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#schemeCategory
+:schemeCategory rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :figureCategory ;
+                rdfs:domain :Scheme ;
+                rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                             owl:hasValue <http://postdata.linhd.uned.es/kos/scheme-category>
+                           ] ;
+                rdfs:comment "Categorisation of the scheme"@en ;
+                rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements/"@en ;
+                rdfs:label "schemeCategory"@en .
+
+
+###  http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#tropeCategory
+:tropeCategory rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :figureCategory ;
+               rdfs:domain :Trope ;
+               rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                            owl:hasValue <http://postdata.linhd.uned.es/kos/trope-category>
+                          ] ;
+               rdfs:comment "Categorisation of the trope"@en ;
+               rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements/"@en ;
+               rdfs:label "tropeCategory"@en .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#typeOfIntertextuality
@@ -236,7 +264,7 @@ Technical Director. Salvador Ros Muñoz -- https://orcid.org/0000-0001-6330-4958
                        rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                    owl:hasValue <http://postdata.linhd.uned.es/kos/typeOfIntertextuality>
+                                    owl:hasValue <http://postdata.linhd.uned.es/kos/type-of-intertextuality>
                                   ] ;
                        rdfs:comment "Categorisation of the work under analysis depending on the relationship between this work and other texts. E.g. “contrafactum”, “de seguir”, etc."@en ;
                        rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements/"@en ;
@@ -262,6 +290,7 @@ owl:topObjectProperty rdfs:domain owl:Thing .
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#content
 :content rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:string ;
          rdfs:comment """Full content of the literary resource. For example, the content of the  acrostic is  the letters that compose it.
 En la figura de la palabra, el contenido es una palabra o frase que se utiliza en la figura y que posee un significado separado de su definición literal"""@en ;
          rdfs:isDefinedBy "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements/"@en ;
@@ -364,16 +393,7 @@ En la figura de la palabra, el contenido es una palabra o frase que se utiliza e
 
 
 ###  http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression
-<http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression> rdf:type owl:Class ;
-                                                            rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
-                                                            rdfs:comment """This class comprises the intellectual or artistic realisations of works in the form of identifiable immaterial objects, such as texts, poems, jokes, musical or choreographic notations, movement pattern, sound pattern, images, multimedia objects, or any combination of such forms that have objectively recognisable structures. The substance of F2 Expression is signs.
-Expressions cannot exist without a physical carrier, but do not depend on a specific physical carrier and can exist on one or more carriers simultaneously. Carriers may include human memory.
-Inasmuch as the form of F2 Expression is an inherent characteristic of the F2 Expression, any change in form (e.g., from alpha-numeric notation to spoken word, a poem created in capitals and rendered in lower case) is a new F2 Expression. Similarly, changes in the intellectual conventions or instruments that are employed to express a work (e.g., translation from one language to another) result in the creation of a new F2 Expression. Thus, if a text is revised or modified, the resulting F2 Expression is considered to be a new F2 Expression. Minor changes, such as corrections of spelling and punctuation, etc., are normally considered variations within the same F2 Expression. On a practical level, the degree to which distinctions are made between variant expressions of a work will depend to some extent on the nature of the F1 Work itself, and on the anticipated needs of users.
-The genre of the work may provide an indication of which features are essential to the expression. In some cases, aspects of physical form, such as typeface and page layout, are not integral to the intellectual or artistic realisation of the work as such, and therefore are not distinctive criteria for the respective expressions. For another work, features such as layout may be essential. For instance, the author or a graphic designer may wrap a poem around an image.
-An expression of a work may include expressions of other works within it. For instance, an anthology of poems is regarded as a work in its own right that makes use of expressions of the individual poems that have been selected and ordered as part of an intellectual process. This does not make the contents of the aggregated expressions part of this work, but only parts of the resulting expression.
-If an instance of F2 Expression is of a specific form, such as text, image, etc., it may be simultaneously instantiated in the specific classes representing these forms in CIDOC CRM. Thereby one can make use of the more specific properties of these classes, such as language (which is applicable to instances of E33 Linguistic Object only).
-"""@en ;
-                                                            rdfs:label "Expression"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression> rdf:type owl:Class .
 
 
 ###  http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#Acrostic
@@ -397,7 +417,7 @@ If an instance of F2 Expression is of a specific form, such as text, image, etc.
                                   owl:allValuesFrom [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                             owl:hasValue <http://postdata.linhd.uned.es/kos/figureCategory>
+                                                                             owl:hasValue <http://postdata.linhd.uned.es/kos/trope-category>
                                                                            ]
                                                                          ) ;
                                                       rdf:type owl:Class
@@ -409,7 +429,7 @@ If an instance of F2 Expression is of a specific form, such as text, image, etc.
                                   owl:onClass [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                                      [ rdf:type owl:Restriction ;
                                                                        owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                       owl:hasValue <http://postdata.linhd.uned.es/kos/figureCategory>
+                                                                       owl:hasValue <http://postdata.linhd.uned.es/kos/trope-category>
                                                                      ]
                                                                    ) ;
                                                 rdf:type owl:Class
@@ -496,19 +516,23 @@ If an instance of F2 Expression is of a specific form, such as text, image, etc.
 #    Individuals
 #################################################################
 
-###  http://postdata.linhd.uned.es/kos/figureCategory
-<http://postdata.linhd.uned.es/kos/figureCategory> rdf:type owl:NamedIndividual ,
-                                                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-
-
-###  http://postdata.linhd.uned.es/kos/rethoricalOperation
-<http://postdata.linhd.uned.es/kos/rethoricalOperation> rdf:type owl:NamedIndividual ,
+###  http://postdata.linhd.uned.es/kos/rethorica-operation
+<http://postdata.linhd.uned.es/kos/rethorica-operation> rdf:type owl:NamedIndividual ,
                                                                  <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://postdata.linhd.uned.es/kos/typeOfIntertextuality
-<http://postdata.linhd.uned.es/kos/typeOfIntertextuality> rdf:type owl:NamedIndividual ,
-                                                                   <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  http://postdata.linhd.uned.es/kos/scheme-category
+<http://postdata.linhd.uned.es/kos/scheme-category> rdf:type owl:NamedIndividual .
+
+
+###  http://postdata.linhd.uned.es/kos/trope-category
+<http://postdata.linhd.uned.es/kos/trope-category> rdf:type owl:NamedIndividual ,
+                                                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://postdata.linhd.uned.es/kos/type-of-intertextuality
+<http://postdata.linhd.uned.es/kos/type-of-intertextuality> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 #################################################################

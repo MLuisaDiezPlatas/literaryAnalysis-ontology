@@ -125,13 +125,18 @@
       "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
     },
     "content" : {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#content"
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#content",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
     },
     "figureCategory" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#figureCategory",
+      "@type" : "@id"
+    },
+    "schemeCategory" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#schemeCategory",
       "@type" : "@id"
     },
     "ConceptScheme" : {
@@ -195,6 +200,10 @@
     },
     "isReferencedIn" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#isReferencedIn",
+      "@type" : "@id"
+    },
+    "tropeCategory" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#tropeCategory",
       "@type" : "@id"
     },
     "figureMeaning" : {
