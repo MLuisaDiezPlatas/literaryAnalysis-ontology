@@ -51,12 +51,20 @@
     "FigureOfSpeech" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#FigureOfSpeech"
     },
+    "figureVariety" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#figureVariety",
+      "@type" : "@id"
+    },
     "hasRelationsWith" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#hasRelationsWith",
       "@type" : "@id"
     },
     "isRelatedWith" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#isRelatedWith",
+      "@type" : "@id"
+    },
+    "rhetoricalOperation" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#rhetoricalOperation",
       "@type" : "@id"
     },
     "label" : {
@@ -88,6 +96,10 @@
     },
     "E73_Information_Object" : {
       "@id" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+    },
+    "schemeVariety" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#schemeVariety",
+      "@type" : "@id"
     },
     "hasDerivedWork" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#hasDerivedWork",
@@ -125,14 +137,11 @@
       "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
     },
     "content" : {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#content"
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#content",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
-    },
-    "figureCategory" : {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#figureCategory",
-      "@type" : "@id"
     },
     "ConceptScheme" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
@@ -168,12 +177,12 @@
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
-    "rethoricalOperation" : {
-      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#rethoricalOperation",
-      "@type" : "@id"
-    },
     "Trope" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#Trope"
+    },
+    "tropeVariety" : {
+      "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#tropeVariety",
+      "@type" : "@id"
     },
     "Redaction" : {
       "@id" : "http://postdata.linhd.uned.es/ontology/postdata-core#Redaction"

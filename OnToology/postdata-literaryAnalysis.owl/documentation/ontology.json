@@ -2,7 +2,7 @@
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://postdata.linhd.uned.es/kos/figureCategory"
+    "@id" : "http://postdata.linhd.uned.es/kos/trope-variety"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -10,37 +10,46 @@
 }, {
   "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "_:genid11"
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://postdata.linhd.uned.es/kos/trope-variety"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#figureCategory"
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "_:genid13"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#figureVariety"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid11",
+  "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid13"
+      "@id" : "_:genid15"
     } ]
   } ]
 }, {
-  "@id" : "_:genid13",
+  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://postdata.linhd.uned.es/kos/figureCategory"
+    "@id" : "http://postdata.linhd.uned.es/kos/trope-variety"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -53,7 +62,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#figureMeaning"
   } ]
 }, {
-  "@id" : "_:genid16",
+  "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -66,7 +75,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#figureReferent"
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -76,7 +85,16 @@
     "@id" : "http://purl.org/dc/elements/1.1/title"
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://postdata.linhd.uned.es/kos/rhetorical-operation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -89,7 +107,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#reference"
   } ]
 }, {
-  "@id" : "_:genid19",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -102,16 +120,7 @@
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#referenceLocation"
   } ]
 }, {
-  "@id" : "_:genid2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://postdata.linhd.uned.es/kos/rethoricalOperation"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
-  } ]
-}, {
-  "@id" : "_:genid20",
+  "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -124,7 +133,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid21",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -140,13 +149,31 @@
   "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://postdata.linhd.uned.es/kos/typeOfIntertextuality"
+    "@id" : "http://postdata.linhd.uned.es/kos/scheme-variety"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
   "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://postdata.linhd.uned.es/kos/trope-variety"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://postdata.linhd.uned.es/kos/type-of-intertextuality"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -159,32 +186,23 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid5",
+  "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "_:genid6"
+    "@id" : "_:genid8"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#figureCategory"
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#figureVariety"
   } ]
 }, {
-  "@id" : "_:genid6",
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid8"
+      "@id" : "_:genid10"
     } ]
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://postdata.linhd.uned.es/kos/figureCategory"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
   "@id" : "http://bakulf.github.io/raop/0.1#FigureCategory",
@@ -317,18 +335,7 @@
   } ]
 }, {
   "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class comprises the intellectual or artistic realisations of works in the form of identifiable immaterial objects, such as texts, poems, jokes, musical or choreographic notations, movement pattern, sound pattern, images, multimedia objects, or any combination of such forms that have objectively recognisable structures. The substance of F2 Expression is signs.\nExpressions cannot exist without a physical carrier, but do not depend on a specific physical carrier and can exist on one or more carriers simultaneously. Carriers may include human memory.\nInasmuch as the form of F2 Expression is an inherent characteristic of the F2 Expression, any change in form (e.g., from alpha-numeric notation to spoken word, a poem created in capitals and rendered in lower case) is a new F2 Expression. Similarly, changes in the intellectual conventions or instruments that are employed to express a work (e.g., translation from one language to another) result in the creation of a new F2 Expression. Thus, if a text is revised or modified, the resulting F2 Expression is considered to be a new F2 Expression. Minor changes, such as corrections of spelling and punctuation, etc., are normally considered variations within the same F2 Expression. On a practical level, the degree to which distinctions are made between variant expressions of a work will depend to some extent on the nature of the F1 Work itself, and on the anticipated needs of users.\nThe genre of the work may provide an indication of which features are essential to the expression. In some cases, aspects of physical form, such as typeface and page layout, are not integral to the intellectual or artistic realisation of the work as such, and therefore are not distinctive criteria for the respective expressions. For another work, features such as layout may be essential. For instance, the author or a graphic designer may wrap a poem around an image.\nAn expression of a work may include expressions of other works within it. For instance, an anthology of poems is regarded as a work in its own right that makes use of expressions of the individual poems that have been selected and ordered as part of an intellectual process. This does not make the contents of the aggregated expressions part of this work, but only parts of the resulting expression.\nIf an instance of F2 Expression is of a specific form, such as text, image, etc., it may be simultaneously instantiated in the specific classes representing these forms in CIDOC CRM. Thereby one can make use of the more specific properties of these classes, such as language (which is applicable to instances of E33 Linguistic Object only).\n"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Expression"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/R10_has_member",
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1270,13 +1277,19 @@
     "@value" : "forms part of"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/kos/figureCategory",
+  "@id" : "http://postdata.linhd.uned.es/kos/rhetorical-operation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/kos/rethoricalOperation",
+  "@id" : "http://postdata.linhd.uned.es/kos/scheme-category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/kos/scheme-variety",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/kos/typeOfIntertextuality",
+  "@id" : "http://postdata.linhd.uned.es/kos/trope-variety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/kos/type-of-intertextuality",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/POSTDATA-literaryAnalysis.owl/dataType#vc-typeOfIntertextuality",
@@ -1296,17 +1309,15 @@
     "@language" : "en",
     "@value" : "POSTADATA Ontology V1.0"
   }, {
-    "@value" : "Helena Bermúdez Sabel  -- https://orcid.org/0000-0001-7782-206X"
-  }, {
     "@value" : "Mª Luisa Díez Platas -- https://orcid.org/0000-0002-9416-3147"
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
-    "@value" : "This ontology supports the information necessary for the literary analysis of a poetic work. It focuses especially on rhetorical figures or figure of speech such as tropes and schemas."
+    "@value" : "This ontology supports the information necessary for the literary analysis of a poetic work. It focuses especially on rhetorical figures or figure of speech such as tropes and schemes."
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
-    "@value" : "POSTDATA: Poetry Standardization and Linked Open Data"
+    "@value" : "postdata-literaryAnalysisElements ontology"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@language" : "en",
@@ -1343,7 +1354,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression"
   }, {
-    "@id" : "_:genid4"
+    "@id" : "_:genid6"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#FigureOfSpeech",
@@ -1367,13 +1378,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://bakulf.github.io/raop/0.1#RethoricalDevice"
   }, {
-    "@id" : "_:genid5"
+    "@id" : "_:genid7"
   }, {
-    "@id" : "_:genid10"
+    "@id" : "_:genid12"
   }, {
-    "@id" : "_:genid15"
+    "@id" : "_:genid17"
   }, {
-    "@id" : "_:genid16"
+    "@id" : "_:genid18"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#Intertextuality",
@@ -1395,11 +1406,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression"
   }, {
-    "@id" : "_:genid17"
-  }, {
-    "@id" : "_:genid18"
-  }, {
     "@id" : "_:genid19"
+  }, {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#Scheme",
@@ -1419,7 +1430,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#FigureOfSpeech"
   }, {
-    "@id" : "_:genid20"
+    "@id" : "_:genid22"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#Trope",
@@ -1439,7 +1450,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#FigureOfSpeech"
   }, {
-    "@id" : "_:genid21"
+    "@id" : "_:genid23"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#UnitOfRhetoricalDevice",
@@ -1458,29 +1469,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "content"
-  } ]
-}, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#figureCategory",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Categorisation of the item at hand."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#FigureOfSpeech"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "figureCategory"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  }, {
-    "@id" : "_:genid1"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#figureMeaning",
@@ -1543,6 +1534,29 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#figureVariety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Categorisation of the item at hand."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#FigureOfSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "figureCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  }, {
+    "@id" : "_:genid1"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#hasAcrostic",
@@ -1947,11 +1961,11 @@
     "@value" : "refersTo"
   } ]
 }, {
-  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#rethoricalOperation",
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#rhetoricalOperation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Classification categories of speech figures in relation to rhetorical operations: addition, omission, transposition and transmutation"
+    "@value" : "Classification categories of speech figures in relation to rhetorical operations: addition, omission, transposition and permutation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#FigureOfSpeech"
@@ -1968,6 +1982,58 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   }, {
     "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#schemeVariety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Categorisation of the scheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#Scheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "schemeCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  }, {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#figureVariety"
+  } ]
+}, {
+  "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#tropeVariety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Categorisation of the trope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#Trope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tropeCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  }, {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#figureVariety"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#typeOfIntertextuality",
@@ -1990,7 +2056,7 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   }, {
-    "@id" : "_:genid3"
+    "@id" : "_:genid5"
   } ]
 }, {
   "@id" : "http://postdata.linhd.uned.es/ontology/postdata-literaryAnalysisElements#usesAsSource",
